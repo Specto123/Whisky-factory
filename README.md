@@ -1,2 +1,2 @@
-# Whisky-factory
-whisky factory system
+# factory
+factory system
