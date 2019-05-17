@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Salary">
+
+   <children>
+      <ComboBox fx:id="month" layoutX="32.0" layoutY="65.0" prefWidth="150.0" />
+      <ComboBox fx:id="year" layoutX="225.0" layoutY="65.0" onAction="#afterUpdate" prefWidth="150.0" />
+      <Label layoutX="82.0" layoutY="42.0" text="Месяц" />
+      <Label layoutX="290.0" layoutY="42.0" text="Год" />
+      <TableView fx:id="Table" layoutX="22.0" layoutY="120.0" prefHeight="200.0" prefWidth="1028.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="FIO" prefWidth="75.0" text="ФИО" />
+            <TableColumn fx:id="Oklad" prefWidth="75.0" text="Оклад" />
+            <TableColumn fx:id="Premiya" prefWidth="75.0" text="Премия" />
+            <TableColumn fx:id="Itog" prefWidth="75.0" text="Итог" />
+            <TableColumn fx:id="procent" prefWidth="135.0" text="Процент_с_продаж" />
+            <TableColumn fx:id="kolvo_prodaj" prefWidth="135.0" text="Количество_продаж" />
+            <TableColumn fx:id="kolvo_pokupok" prefWidth="152.0" text="Количество_покупок" />
+            <TableColumn fx:id="kolvo_proizvodstva" prefWidth="168.0" text="Количество_производства" />
+            <TableColumn fx:id="Obwiy" prefWidth="75.0" text="Общ" />
+        </columns>
+      </TableView>
+      <Button layoutX="256.0" layoutY="383.0" mnemonicParsing="false" onAction="#Salary" text="Выдача зарплаты" />
+   </children>
+</Pane>
